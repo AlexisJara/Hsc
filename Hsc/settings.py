@@ -97,7 +97,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
         'NAME': '127.0.0.1:1521/xe',
-        'USER': 'hsc',
+        'USER': 'bici',
         'PASSWORD': '206712872',
         'TEST':{
             'USER': 'default_test',
@@ -106,7 +106,7 @@ DATABASES = {
         }
     }
 }
-
+ 
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
