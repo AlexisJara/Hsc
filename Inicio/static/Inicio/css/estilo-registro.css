@@ -2,24 +2,17 @@
     --dark: #16191c;
     --dark-x: #1e2126;
     --light:#ffffff;
-    --rojo: #ffc400;
-	--fondo: #1414148c;
 }
-*{
-    font-family: 'Bebas Neue', cursive; 
+*
+{
+    font-family: 'Quicksand'; 
 }
 body{
     color: var(--light);
     text-align: center;
 }
-#fuente{
-	color: var(--rojo);
-	font-family: 'Bebas Neue', cursive;
-	font-size: 30px;
-	padding-left: 20px;
-}
 .bd-dark{
-    background-color: var(--rojo) !important;
+    background-color: var(--dark) !important;
 
 }
 .bd-dark-x{
@@ -31,7 +24,7 @@ body{
     line-height:initial ;
 }
 .img-1{
-    background-image: url('/static/Inicio/img/img-registro/mobibike.jpg');
+    background-image: url('/static/Inicio/img/img-registro/img_1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -59,7 +52,7 @@ body{
     border-radius: 2px solid;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active{
-    background-color: rgb(0, 179, 250);
+    background-color: rgb(39, 71, 153);
     outline: none !important;
     border: none !important;
      box-shadow: none;
