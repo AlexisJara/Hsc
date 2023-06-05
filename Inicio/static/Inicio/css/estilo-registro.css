@@ -2,18 +2,22 @@
     --dark: #16191c;
     --dark-x: #1e2126;
     --light:#ffffff;
+    --rojo: #ffc400;
 }
 *
 {
-    font-family: 'Quicksand'; 
+    font-family: 'Bebas Neue', cursive;
 }
 body{
     color: var(--light);
     text-align: center;
 }
+nav{
+    color: var(--rojo);
+}
 .bd-dark{
-    background-color: var(--dark) !important;
-
+    background-color: var(--rojo) !important;
+    color: var(--rojo);
 }
 .bd-dark-x{
     background-color: var(--dark-x);
@@ -24,16 +28,11 @@ body{
     line-height:initial ;
 }
 .img-1{
-    background-image: url('/static/Inicio/img/img-registro/img_1.jpg');
+    background-image: url('/static/Inicio/img/img-registro/1.jpg');
     background-size: cover;
     background-position: center;
 }
-.img-2{
-    background-image: url('/static/Inicio/img/img-registro/img_2.jpg');
-    background-size: cover;
-    background-position: center;
 
-}
 
 .img-fluid{
     height: 50%;

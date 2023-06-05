@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
     <!--Font Awesome para los icons-->
     <script src="https://kit.fontawesome.com/1877fd7acc.js" crossorigin="anonymous"></script>
 
@@ -25,17 +27,17 @@
         <div class="text-start boton-volver">
             <a href="{%url 'menu_admin' %}" class="boton btn btn-primary">Volver</a>
         </div>
-        <h1 >Agregar un producto</h1>
-        <p style="font-weight: 200; padding-bottom: 10px;">En esta opción puede agregar un nuevo producto a la página. <br> Es importante que <b>llene todos los campos</b> para que pueda continuar.</p>
+        <h1 >Agregar un nuevo modelo al catalogo</h1>
+        <p style="font-weight: 200; padding-bottom: 10px;">En esta opción puede agregar un nuevo modelo al catalogo de la pagina. <br> Es importante que <b>que no deje ningun campo vacio</b> para que pueda agregar el modelo.</p>
         <form class="requires-validation form1" action ="{% url 'addProd' %}" method="POST" enctype="multipart/form-data" id="formprod" name="formularioprod">
             {% csrf_token %}
             <div class="form-group mb-3 flex-column d-flex caja">
-                <label for="" class="datos">Nombre del producto<span class="text-danger"> *</span></label>
+                <label for="" class="datos">Nombre de la BICICLETA<span class="text-danger"> *</span></label>
                 <input type="text" class="form-control negritas" name ="nomprod" id="nomprod" placeholder=" Ingresa el nombre del producto" required>
-                <div class="invalid-feedback">El nombre del producto no puede estar vacío</div>    
+                <div class="invalid-feedback">El nombre de la BICICLETA no puede estar vacío</div>    
             </div>
             <div class="form-group mb-3 flex-column d-flex caja">
-                <label for="" class="datos">Tipo de producto<span class="text-danger"> *</span></label>
+                <label for="" class="datos">Tipo de BICICLETA<span class="text-danger"> *</span></label>
                 <select name="tipoprod" id="tipoprod" class="form-select negritas" aria-label="Productos" required>
                         <option selected disabled value="">Seleccione un tipo de producto</option>
                         {% for i in tipoProd %}
@@ -46,7 +48,7 @@
                 <div class="invalid-feedback">Debe seleccionar un tipo de producto</div>    
             </div>
             <div class="form-group mb-3 flex-column d-flex caja">
-                <label for="" class="datos">Marca de producto<span class="text-danger"> *</span></label>
+                <label for="" class="datos">Marca de la BICICLETA<span class="text-danger"> *</span></label>
                 <select name="marcaprod" id="marcaprod" class="form-select negritas" aria-label="Productos" required>
                         <option selected disabled value="">Seleccione una marca</option>
                         {% for x in Marca %}
@@ -57,23 +59,23 @@
                 <div class="invalid-feedback">El nombre del producto no puede estar vacío</div>    
             </div>
             <div class="form-group mb-3 flex-column d-flex caja">
-                <label for="" class="datos">Stock del producto<span class="text-danger"> *</span></label>
+                <label for="" class="datos">Stock disponible<span class="text-danger"> *</span></label>
                 <input type="text" class="form-control negritas" name="stockprod" id="stockprod" placeholder=" Ingrese el stock del producto" required>
-                <div class="invalid-feedback">El stock del producto no puede estar vacío</div>    
+                <div class="invalid-feedback">El stock de la BICICLETA no puede estar vacío</div>    
             </div>
             <div class="form-group mb-3 flex-column d-flex caja">
-                    <label for="formFile" class="datos form-label">Precio del producto<span class="text-danger"> *</span></label>
+                    <label for="formFile" class="datos form-label">Precio de la BICICLETA<span class="text-danger"> *</span></label>
                     <input type="number" class="form-control negritas" name="precio" id="precio" placeholder=" Ingrese el preico del producto" required>
                     <div class="invalid-feedback">Debe ingresar un precio</div>
                 </div>
             <div class="form-group mb-3 flex-column d-flex caja">
-                <label for="formFile" class="datos form-label">Seleccionar imagen<span class="text-danger"> *</span></label>
+                <label for="formFile" class="datos form-label">Seleccione imagen de la BICICLETA<span class="text-danger"> *</span></label>
                 <input class="form-control negritas" type="file" name ="imgprod" id="imgprod"required>
                 <div class="invalid-feedback">Debe seleccionar una imagen para el producto</div>
             </div>
             <div class="form-group mb-3 flex-column d-flex caja">
-                <label for="" class="datos">Descripción del producto<span class="text-danger"> *</span></label>
-                <textarea class="form-control negritas" name ="descprod" id="descprod" rows="4" placeholder="Escriba acá la descripción del producto" required></textarea>
+                <label for="" class="datos">Descripción de sobre la BICICLETA<span class="text-danger"> *</span></label>
+                <textarea class="form-control negritas" name ="descprod" id="descprod" rows="4" placeholder="Escriba acá la descripción de la BICICLETA" required></textarea>
                 <div class="invalid-feedback">El producto debe tener una descripción</div>           
             </div>
             <div class="text-center">

@@ -1,14 +1,21 @@
-
+:root{
+    --rojo: #ffc400;
+}
 *
 {
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand','Open Sans', 'Helvetica Neue'
+    font-family: 'Bebas Neue', cursive;
 }
 body{
     
-    background-color: rgb(40, 3, 126);
+    background-color: #16191c;
     text-align: center;    
+    font-family:'Bebas Neue', cursive;
+}
+nav{
+	font-family: 'Bebas Neue', cursive;
+	color: var(--rojo);
 }
 /*Barra de navegación*/
 .navegacion{
@@ -16,7 +23,7 @@ body{
 }
 /*Cabecera de la página (Idealmente una imagen)*/
 .img-hd{
-    background-image: url('/static/Inicio/img/img-index/header.jpg');
+    background-image: url('/static/Inicio/img/img-index/1.jpg');
     width: auto;
     height: 400px;
     background-position: center;

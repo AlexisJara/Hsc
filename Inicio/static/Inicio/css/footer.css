@@ -1,7 +1,16 @@
 /*FOOTER*/
+footer {
+    background-color: rgba(36, 36, 36, 0.664);
+    color: white;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 .pie-pagina {
     width: 100%;
-    background-color: rgb(16, 1, 51);
+    background-color: rgb(35, 0, 116);
     margin-top: 50px;
 }
 

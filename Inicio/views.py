@@ -213,7 +213,7 @@ def registrar_m (request):
     
     comuna2 = Comuna.objects.get(idComuna = comuna)
     region2 = Region.objects.get(idRegion = region)
-    tipousuario2 = TipoUsuario.objects.get(idTipoUsuario = 2)
+    tipousuario2 = TipoUsuario.objects.get(idTipoUsuario = 5)
     existe = None
     try:
         existe = Usuario.objects.get(username=user)
@@ -232,7 +232,7 @@ def iniciar_sesion(request):
     try:
         usuario2 = Usuario.objects.get(username = usuario1,contrasennia = contra1)
         
-        if(usuario2.tipousuario.idTipoUsuario == 1):
+        if(usuario2.tipousuario.idTipoUsuario == 6):
             return redirect ('menu_admin')
         else:    
             contexto = {"usuario":usuario2}

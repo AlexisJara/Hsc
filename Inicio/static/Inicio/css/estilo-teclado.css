@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Quicksand','Open Sans', 'Helvetica Neue'
+    font-family: 'Bebas Neue', cursive;
 }
 /*Barra de navegación*/
 .navegacion{
@@ -19,7 +19,7 @@
 }
 /*Cabecera de la página (Idealmente una imagen)*/
 .img-hd{
-    background-image: url('/static/Inicio/img/img-teclados/teclado.jpg');
+    background-image: url('/static/Inicio/img/img-teclados/skyline.jpeg');
     width: auto;
     height: 400px;
     background-position: center;
@@ -43,7 +43,7 @@ div a{
 
 }
 body{
-    background-color: rgba(40, 3, 126);
+    background-color: rgb(59, 59, 59);
 }
 
 .items

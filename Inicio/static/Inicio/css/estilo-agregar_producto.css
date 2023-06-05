@@ -2,10 +2,10 @@ body
 {
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand';
+    font-family: 'Bebas Neue', cursive;
     font-size: 20px;
-    background-color: rgb(40, 3, 126);
-    color: #fff;
+    background-color: rgb(0, 0, 0);
+    color: #ffc400;
 }
 .prod-size
 {

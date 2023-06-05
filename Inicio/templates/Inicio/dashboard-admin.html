@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
     <!--Font Awesome para los icons-->
     <script src="https://kit.fontawesome.com/1877fd7acc.js" crossorigin="anonymous"></script>
 
@@ -25,7 +27,7 @@
     </header>
     <div class="container">
       <div class="text-start boton-volver">
-        <a href="{% url 'iniciar' %}" class="boton btn btn-primary">Cerrar sesión</a>
+        <a href="{% url 'iniciar' %}" class="boton btn btn-danger">Cerrar sesión</a>
       </div>
         <h1 class="titulo">¡Bienvenido Administrador!</h1>
         <div class="row">
@@ -51,16 +53,16 @@
             <div class="col-6 columnas">
                 <div class="card h-100 py-2">
                     <a href="{%url 'agregarprod'%}" style="text-decoration: none; color: #000;">
-                    <p class="align-items-start fw-bold titulo-card "><i class="fa-solid fa-plus align-items-end iconos"></i> Agregar un nuevo producto </p>
-                    <p class="desc">¡Presione acá si desea agregar un nuevo producto a la tienda!</p>
+                    <p class="align-items-start fw-bold titulo-card "><i class="fa-solid fa-plus align-items-end iconos"></i> Agregar un nuevo Modelo de BICICLETAS </p>
+                    <p class="desc">¡Presione acá si desea agregar un nuevo modelo al catalogo!</p>
                     </a>
                 </div>    
             </div>
             <div class="col-6 columnas">
                 <div class="card h-100 py-2">
                     <a href="{%url 'indexadmin'%}" style="text-decoration: none; color: #000;">
-                    <p class="fw-bold align-items-start titulo-card"><i class="fa-solid fa-arrow-right-arrow-left iconos"></i> Modificar y/o Eliminar un producto</p>
-                    <p class="desc">¡Presione acá si desea modificar cualquier producto de la tienda (También para aplicar descuentos)!</p>
+                    <p class="fw-bold align-items-start titulo-card"><i class="fa-solid fa-arrow-right-arrow-left iconos"></i> Modificar y/o Eliminar una BICICLETA</p>
+                    <p class="desc">¡Presione acá si desea modificar cualquier modelo del catalogo (También para aplicar descuentos)!</p>
                     </a>
                 </div> 
             </div>
@@ -70,7 +72,7 @@
                 <div class="card h-100 py-2">
                     <a href="/pages/buscar_compra.html" style="text-decoration: none; color: #000;">
                     <p class="fw-bold align-items-start titulo-card"><i class="fa-solid fa-magnifying-glass-dollar iconos"></i> Buscar una compra</p>
-                    <p class="desc">¡Presione acá si desea buscar una compra realizada!</p>
+                    <p class="desc">¡Presione acá si desea buscar una compra en especifico!</p>
                     </a>
                 </div> 
             </div>
